@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Comparison</title>
+</head>
+<body>
+    <h1>Weather Comparison</h1>
+    <h2>{{ city1_info.name }}</h2>
+    <p>Temperature: {{ city1_info.temp }}°{{ units_letter }}</p>
+    <p>Humidity: {{ city1_info.humidity }}%</p>
+    <p>Wind Speed: {{ city1_info.wind_speed }} m/s</p>
+    <p>Sunset: {{ city1_info.sunset }}</p>
+    <h2>{{ city2_info.name }}</h2>
+    <p>Temperature: {{ city2_info.temp }}°{{ units_letter }}</p>
+    <p>Humidity: {{ city2_info.humidity }}%</p>
+    <p>Wind Speed: {{ city2_info.wind_speed }} m/s</p>
+    <p>Sunset: {{ city2_info.sunset }}</p>
+    <a href="/">Back to Home</a>
+</body>
+</html>

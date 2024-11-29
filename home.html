@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Welcome to the Weather App</h1>
+    <form action="/results" method="get">
+        <label for="city">Enter City:</label>
+        <input type="text" id="city" name="city" required>
+        <label for="units">Units:</label>
+        <select id="units" name="units">
+            <option value="imperial">Fahrenheit</option>
+            <option value="metric">Celsius</option>
+            <option value="standard">Kelvin</option>
+        </select>
+        <button type="submit">Get Weather</button>
+    </form>
+    <form action="/comparison_results" method="get">
+        <h2>Compare Weather</h2>
+        <label for="city1">City 1:</label>
+        <input type="text" id="city1" name="city1" required>
+        <label for="city2">City 2:</label>
+        <input type="text" id="city2" name="city2" required>
+        <label for="units">Units:</label>
+        <select id="units" name="units">
+            <option value="imperial">Fahrenheit</option>
+            <option value="metric">Celsius</option>
+            <option value="standard">Kelvin</option>
+        </select>
+        <button type="submit">Compare</button>
+    </form>
+</body>
+</html>
